@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+    <style>
+        #print-page {
+            width: 50%;
+            height: 95vh;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        #print-page img {
+            width: 50%;
+        }
+
+        #print-page button {
+            padding: 10px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            border: none;
+            border-radius: 35px;
+        }
+    </style>
+</head>
+<body>
+    <section id="print-page">
+        <h1>Lorem ipsum dolor</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, quo. Veritatis corrupti quae
+            dignissimos, unde voluptas deserunt voluptate ab hic magnam. Quidem nisi praesentium eligendi molestias
+            blanditiis quia maiores consectetur.
+            Ab repudiandae voluptatibus ea laudantium similique adipisci? Ipsum, ab culpa veniam nemo dolore labore
+            ipsam, minus dolor officiis dolorem error pariatur itaque? Cupiditate voluptas quaerat quis a ipsum hic
+            alias?
+            Consequatur distinctio, quaerat praesentium obcaecati suscipit ipsa fugit vero, asperiores, error sunt
+            repudiandae? Dolores quo voluptates vel, quas deserunt inventore, consequuntur odit quisquam molestias
+            debitis eum, reiciendis ratione beatae iste.
+            Iste sint inventore praesentium, amet delectus dolores fugiat adipisci saepe ea corporis doloribus explicabo
+            nam sit similique minima repudiandae! Hic, corporis! Obcaecati accusantium cumque id officia laudantium non
+            hic nulla!
+            Molestiae, quidem libero soluta dicta dignissimos et. Hic, quos eveniet laboriosam, ex earum consequuntur
+            libero et iure corporis quod distinctio consequatur odio fuga at eaque culpa numquam deserunt qui. Eaque!
+        </p>
+        <img src="https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="">
+        <button type="button" onclick="printPage()">Print this page.</button>
+    </section>
+    <script>
+        const printPage = () => {
+            window.print();
+        }
+    </script>
+</body>
+</html>
