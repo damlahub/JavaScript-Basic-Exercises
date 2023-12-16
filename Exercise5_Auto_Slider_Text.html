@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+        #slideTextContent{
+            width: 370px;
+            background-color: greenyellow;
+            padding: 50px ;
+            color: black;
+            display: flex;
+            justify-content: center;
+            border-radius: 35px;
+            box-shadow: 0 0 10px greenyellow, 0 0 20px greenyellow, 0 0 50px greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <section id="slideTextContent">
+        <h1 class="slideText"> Herkese Merhaba! Ben Damla! </h1>
+    </section>
+
+    <script>
+        const slideText = () => {
+            let getText = document.querySelector(".slideText");
+            let textFirstChild = getText.firstChild;
+            let text = textFirstChild.data;
+
+            setInterval(function () {
+                text = text[text.length - 1] + text.substring(0, text.length - 1); //Metni bir karakter sağa kaydırır.
+                //     Son harf.                Yazının son karakter hariç tüm karakterleri alır.
+                textFirstChild.data = text; //Yeni metin yazılır.
+            }, 100);
+        }
+        window.onload = slideText();
+    </script>
+</body>
+</html>
